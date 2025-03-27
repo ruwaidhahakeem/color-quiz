@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personality Colors Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    .question {
+      margin-bottom: 10px;
+    }
+    .options label {
+      margin-right: 15px;
+    }
+    .submit-btn {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+    #results {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Primary and Secondary Personality Colors Questionnaire</h1>
+  <p>
+    For each statement, select a number that best reflects your level of agreement:<br>
+    <strong>1</strong>: Strongly Disagree, <strong>2</strong>: Disagree, <strong>3</strong>: Neutral, <strong>4</strong>: Agree, <strong>5</strong>: Strongly Agree.
+  </p>
+  <p>
+    After completing the questionnaire, click "Submit" to view your primary (highest score) and secondary (second highest score) personality colors.
+  </p>
+  
+  <form id="questionnaire">
+    
+    <!-- Section A: Red Behavior -->
+    <section id="red-section">
+      <h2>Section A: Red Behavior</h2>
+      <p><em>(Traits: decisiveness, competitiveness, high energy, and leadership.)</em></p>
+      <!-- Repeat for each question -->
+      <div class="question">
+        <label>1. I prefer to take charge in group situations rather than wait for someone else to lead.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red1" value="1" required> 1</label>
+          <label><input type="radio" name="red1" value="2"> 2</label>
+          <label><input type="radio" name="red1" value="3"> 3</label>
+          <label><input type="radio" name="red1" value="4"> 4</label>
+          <label><input type="radio" name="red1" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>2. I trust my ability to decide quickly—even if not all details are available.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red2" value="1" required> 1</label>
+          <label><input type="radio" name="red2" value="2"> 2</label>
+          <label><input type="radio" name="red2" value="3"> 3</label>
+          <label><input type="radio" name="red2" value="4"> 4</label>
+          <label><input type="radio" name="red2" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>3. I set extremely high goals for myself and push to achieve them despite obstacles.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red3" value="1" required> 1</label>
+          <label><input type="radio" name="red3" value="2"> 2</label>
+          <label><input type="radio" name="red3" value="3"> 3</label>
+          <label><input type="radio" name="red3" value="4"> 4</label>
+          <label><input type="radio" name="red3" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>4. I thrive on competition and often view everyday challenges as opportunities to win.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red4" value="1" required> 1</label>
+          <label><input type="radio" name="red4" value="2"> 2</label>
+          <label><input type="radio" name="red4" value="3"> 3</label>
+          <label><input type="radio" name="red4" value="4"> 4</label>
+          <label><input type="radio" name="red4" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>5. I speak directly and honestly, even if my opinions might be perceived as blunt.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red5" value="1" required> 1</label>
+          <label><input type="radio" name="red5" value="2"> 2</label>
+          <label><input type="radio" name="red5" value="3"> 3</label>
+          <label><input type="radio" name="red5" value="4"> 4</label>
+          <label><input type="radio" name="red5" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>6. I get frustrated when things move too slowly or when processes become inefficient.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red6" value="1" required> 1</label>
+          <label><input type="radio" name="red6" value="2"> 2</label>
+          <label><input type="radio" name="red6" value="3"> 3</label>
+          <label><input type="radio" name="red6" value="4"> 4</label>
+          <label><input type="radio" name="red6" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>7. I enjoy challenging the status quo and look for innovative ways to improve situations.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red7" value="1" required> 1</label>
+          <label><input type="radio" name="red7" value="2"> 2</label>
+          <label><input type="radio" name="red7" value="3"> 3</label>
+          <label><input type="radio" name="red7" value="4"> 4</label>
+          <label><input type="radio" name="red7" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>8. I naturally assume leadership roles in both work and personal environments.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red8" value="1" required> 1</label>
+          <label><input type="radio" name="red8" value="2"> 2</label>
+          <label><input type="radio" name="red8" value="3"> 3</label>
+          <label><input type="radio" name="red8" value="4"> 4</label>
+          <label><input type="radio" name="red8" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>9. I measure success by how much I can outdo others.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red9" value="1" required> 1</label>
+          <label><input type="radio" name="red9" value="2"> 2</label>
+          <label><input type="radio" name="red9" value="3"> 3</label>
+          <label><input type="radio" name="red9" value="4"> 4</label>
+          <label><input type="radio" name="red9" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>10. I prefer making quick, decisive actions over prolonged discussions.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red10" value="1" required> 1</label>
+          <label><input type="radio" name="red10" value="2"> 2</label>
+          <label><input type="radio" name="red10" value="3"> 3</label>
+          <label><input type="radio" name="red10" value="4"> 4</label>
+          <label><input type="radio" name="red10" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>11. I am willing to take risks if they bring me closer to my goals.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red11" value="1" required> 1</label>
+          <label><input type="radio" name="red11" value="2"> 2</label>
+          <label><input type="radio" name="red11" value="3"> 3</label>
+          <label><input type="radio" name="red11" value="4"> 4</label>
+          <label><input type="radio" name="red11" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>12. I believe there is always a better way to do things and constantly seek improvements.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red12" value="1" required> 1</label>
+          <label><input type="radio" name="red12" value="2"> 2</label>
+          <label><input type="radio" name="red12" value="3"> 3</label>
+          <label><input type="radio" name="red12" value="4"> 4</label>
+          <label><input type="radio" name="red12" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>13. I use competition as a way to motivate myself and those around me.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red13" value="1" required> 1</label>
+          <label><input type="radio" name="red13" value="2"> 2</label>
+          <label><input type="radio" name="red13" value="3"> 3</label>
+          <label><input type="radio" name="red13" value="4"> 4</label>
+          <label><input type="radio" name="red13" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>14. I prefer a dynamic, fast-paced environment to a calm, predictable one.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red14" value="1" required> 1</label>
+          <label><input type="radio" name="red14" value="2"> 2</label>
+          <label><input type="radio" name="red14" value="3"> 3</label>
+          <label><input type="radio" name="red14" value="4"> 4</label>
+          <label><input type="radio" name="red14" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>15. I am willing to make unpopular decisions if I believe they will drive progress.</label><br>
+        <div class="options">
+          <label><input type="radio" name="red15" value="1" required> 1</label>
+          <label><input type="radio" name="red15" value="2"> 2</label>
+          <label><input type="radio" name="red15" value="3"> 3</label>
+          <label><input type="radio" name="red15" value="4"> 4</label>
+          <label><input type="radio" name="red15" value="5"> 5</label>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section B: Yellow Behavior -->
+    <section id="yellow-section">
+      <h2>Section B: Yellow Behavior</h2>
+      <p><em>(Traits: optimism, creativity, spontaneity, and strong social connectivity.)</em></p>
+      
+      <div class="question">
+        <label>1. I tend to see the bright side of every situation, even when circumstances are challenging.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow1" value="1" required> 1</label>
+          <label><input type="radio" name="yellow1" value="2"> 2</label>
+          <label><input type="radio" name="yellow1" value="3"> 3</label>
+          <label><input type="radio" name="yellow1" value="4"> 4</label>
+          <label><input type="radio" name="yellow1" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>2. I often make decisions based on my gut feelings rather than solely on logic.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow2" value="1" required> 1</label>
+          <label><input type="radio" name="yellow2" value="2"> 2</label>
+          <label><input type="radio" name="yellow2" value="3"> 3</label>
+          <label><input type="radio" name="yellow2" value="4"> 4</label>
+          <label><input type="radio" name="yellow2" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>3. I feel energized and creative when interacting with others or at social events.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow3" value="1" required> 1</label>
+          <label><input type="radio" name="yellow3" value="2"> 2</label>
+          <label><input type="radio" name="yellow3" value="3"> 3</label>
+          <label><input type="radio" name="yellow3" value="4"> 4</label>
+          <label><input type="radio" name="yellow3" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>4. I naturally attract people and often become the center of attention.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow4" value="1" required> 1</label>
+          <label><input type="radio" name="yellow4" value="2"> 2</label>
+          <label><input type="radio" name="yellow4" value="3"> 3</label>
+          <label><input type="radio" name="yellow4" value="4"> 4</label>
+          <label><input type="radio" name="yellow4" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>5. I find it easy to connect with strangers and quickly build new relationships.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow5" value="1" required> 1</label>
+          <label><input type="radio" name="yellow5" value="2"> 2</label>
+          <label><input type="radio" name="yellow5" value="3"> 3</label>
+          <label><input type="radio" name="yellow5" value="4"> 4</label>
+          <label><input type="radio" name="yellow5" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>6. I enjoy spontaneous activities and seek out new experiences rather than sticking to routines.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow6" value="1" required> 1</label>
+          <label><input type="radio" name="yellow6" value="2"> 2</label>
+          <label><input type="radio" name="yellow6" value="3"> 3</label>
+          <label><input type="radio" name="yellow6" value="4"> 4</label>
+          <label><input type="radio" name="yellow6" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>7. I often come up with creative, out-of-the-box ideas—even if they seem unconventional.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow7" value="1" required> 1</label>
+          <label><input type="radio" name="yellow7" value="2"> 2</label>
+          <label><input type="radio" name="yellow7" value="3"> 3</label>
+          <label><input type="radio" name="yellow7" value="4"> 4</label>
+          <label><input type="radio" name="yellow7" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>8. I value personal relationships and feel most alive when interacting with others.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow8" value="1" required> 1</label>
+          <label><input type="radio" name="yellow8" value="2"> 2</label>
+          <label><input type="radio" name="yellow8" value="3"> 3</label>
+          <label><input type="radio" name="yellow8" value="4"> 4</label>
+          <label><input type="radio" name="yellow8" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>9. I am naturally persuasive, and my optimism often inspires others.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow9" value="1" required> 1</label>
+          <label><input type="radio" name="yellow9" value="2"> 2</label>
+          <label><input type="radio" name="yellow9" value="3"> 3</label>
+          <label><input type="radio" name="yellow9" value="4"> 4</label>
+          <label><input type="radio" name="yellow9" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>10. I express myself enthusiastically, using vivid language and gestures.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow10" value="1" required> 1</label>
+          <label><input type="radio" name="yellow10" value="2"> 2</label>
+          <label><input type="radio" name="yellow10" value="3"> 3</label>
+          <label><input type="radio" name="yellow10" value="4"> 4</label>
+          <label><input type="radio" name="yellow10" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>11. I quickly shift focus to new opportunities when things are no longer engaging.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow11" value="1" required> 1</label>
+          <label><input type="radio" name="yellow11" value="2"> 2</label>
+          <label><input type="radio" name="yellow11" value="3"> 3</label>
+          <label><input type="radio" name="yellow11" value="4"> 4</label>
+          <label><input type="radio" name="yellow11" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>12. I believe that life is to be savored, and I try to enjoy every moment.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow12" value="1" required> 1</label>
+          <label><input type="radio" name="yellow12" value="2"> 2</label>
+          <label><input type="radio" name="yellow12" value="3"> 3</label>
+          <label><input type="radio" name="yellow12" value="4"> 4</label>
+          <label><input type="radio" name="yellow12" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>13. I trust my intuition and emotions when facing new challenges.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow13" value="1" required> 1</label>
+          <label><input type="radio" name="yellow13" value="2"> 2</label>
+          <label><input type="radio" name="yellow13" value="3"> 3</label>
+          <label><input type="radio" name="yellow13" value="4"> 4</label>
+          <label><input type="radio" name="yellow13" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>14. I thrive in environments that are lively and filled with social interaction.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow14" value="1" required> 1</label>
+          <label><input type="radio" name="yellow14" value="2"> 2</label>
+          <label><input type="radio" name="yellow14" value="3"> 3</label>
+          <label><input type="radio" name="yellow14" value="4"> 4</label>
+          <label><input type="radio" name="yellow14" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>15. I am naturally curious and always on the lookout for fun or innovative ways to approach problems.</label><br>
+        <div class="options">
+          <label><input type="radio" name="yellow15" value="1" required> 1</label>
+          <label><input type="radio" name="yellow15" value="2"> 2</label>
+          <label><input type="radio" name="yellow15" value="3"> 3</label>
+          <label><input type="radio" name="yellow15" value="4"> 4</label>
+          <label><input type="radio" name="yellow15" value="5"> 5</label>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section C: Green Behavior -->
+    <section id="green-section">
+      <h2>Section C: Green Behavior</h2>
+      <p><em>(Traits: calmness, reliability, supportiveness, and a team‐oriented, harmonious nature.)</em></p>
+      
+      <div class="question">
+        <label>1. I remain calm and composed, even in stressful or unpredictable situations.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green1" value="1" required> 1</label>
+          <label><input type="radio" name="green1" value="2"> 2</label>
+          <label><input type="radio" name="green1" value="3"> 3</label>
+          <label><input type="radio" name="green1" value="4"> 4</label>
+          <label><input type="radio" name="green1" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>2. I value harmonious relationships and always consider others’ feelings before making decisions.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green2" value="1" required> 1</label>
+          <label><input type="radio" name="green2" value="2"> 2</label>
+          <label><input type="radio" name="green2" value="3"> 3</label>
+          <label><input type="radio" name="green2" value="4"> 4</label>
+          <label><input type="radio" name="green2" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>3. I am reliable and consistently follow through on my commitments, even if it takes extra time.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green3" value="1" required> 1</label>
+          <label><input type="radio" name="green3" value="2"> 2</label>
+          <label><input type="radio" name="green3" value="3"> 3</label>
+          <label><input type="radio" name="green3" value="4"> 4</label>
+          <label><input type="radio" name="green3" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>4. I tend to let others take the lead to maintain group harmony.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green4" value="1" required> 1</label>
+          <label><input type="radio" name="green4" value="2"> 2</label>
+          <label><input type="radio" name="green4" value="3"> 3</label>
+          <label><input type="radio" name="green4" value="4"> 4</label>
+          <label><input type="radio" name="green4" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>5. I take genuine pleasure in listening to others and making them feel understood.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green5" value="1" required> 1</label>
+          <label><input type="radio" name="green5" value="2"> 2</label>
+          <label><input type="radio" name="green5" value="3"> 3</label>
+          <label><input type="radio" name="green5" value="4"> 4</label>
+          <label><input type="radio" name="green5" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>6. I prefer stability and predictability in my daily life over rapid or drastic changes.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green6" value="1" required> 1</label>
+          <label><input type="radio" name="green6" value="2"> 2</label>
+          <label><input type="radio" name="green6" value="3"> 3</label>
+          <label><input type="radio" name="green6" value="4"> 4</label>
+          <label><input type="radio" name="green6" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>7. I place the needs of the group or team above my own personal ambitions.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green7" value="1" required> 1</label>
+          <label><input type="radio" name="green7" value="2"> 2</label>
+          <label><input type="radio" name="green7" value="3"> 3</label>
+          <label><input type="radio" name="green7" value="4"> 4</label>
+          <label><input type="radio" name="green7" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>8. I avoid confrontations to keep interactions peaceful and amicable.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green8" value="1" required> 1</label>
+          <label><input type="radio" name="green8" value="2"> 2</label>
+          <label><input type="radio" name="green8" value="3"> 3</label>
+          <label><input type="radio" name="green8" value="4"> 4</label>
+          <label><input type="radio" name="green8" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>9. I am naturally inclined to support and help others, even if it inconveniences me.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green9" value="1" required> 1</label>
+          <label><input type="radio" name="green9" value="2"> 2</label>
+          <label><input type="radio" name="green9" value="3"> 3</label>
+          <label><input type="radio" name="green9" value="4"> 4</label>
+          <label><input type="radio" name="green9" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>10. I feel more comfortable working in a supportive, team-oriented environment rather than seeking personal recognition.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green10" value="1" required> 1</label>
+          <label><input type="radio" name="green10" value="2"> 2</label>
+          <label><input type="radio" name="green10" value="3"> 3</label>
+          <label><input type="radio" name="green10" value="4"> 4</label>
+          <label><input type="radio" name="green10" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>11. I listen more than I speak and rarely feel the need to dominate a conversation.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green11" value="1" required> 1</label>
+          <label><input type="radio" name="green11" value="2"> 2</label>
+          <label><input type="radio" name="green11" value="3"> 3</label>
+          <label><input type="radio" name="green11" value="4"> 4</label>
+          <label><input type="radio" name="green11" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>12. I am attentive to details that matter to others, like remembering birthdays and important events.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green12" value="1" required> 1</label>
+          <label><input type="radio" name="green12" value="2"> 2</label>
+          <label><input type="radio" name="green12" value="3"> 3</label>
+          <label><input type="radio" name="green12" value="4"> 4</label>
+          <label><input type="radio" name="green12" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>13. I prefer consistent routines and value predictability in my environment.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green13" value="1" required> 1</label>
+          <label><input type="radio" name="green13" value="2"> 2</label>
+          <label><input type="radio" name="green13" value="3"> 3</label>
+          <label><input type="radio" name="green13" value="4"> 4</label>
+          <label><input type="radio" name="green13" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>14. I find satisfaction in knowing I contribute to the overall well-being of those around me.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green14" value="1" required> 1</label>
+          <label><input type="radio" name="green14" value="2"> 2</label>
+          <label><input type="radio" name="green14" value="3"> 3</label>
+          <label><input type="radio" name="green14" value="4"> 4</label>
+          <label><input type="radio" name="green14" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>15. I am content with a quiet role where I support others rather than seeking the spotlight.</label><br>
+        <div class="options">
+          <label><input type="radio" name="green15" value="1" required> 1</label>
+          <label><input type="radio" name="green15" value="2"> 2</label>
+          <label><input type="radio" name="green15" value="3"> 3</label>
+          <label><input type="radio" name="green15" value="4"> 4</label>
+          <label><input type="radio" name="green15" value="5"> 5</label>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section D: Blue Behavior -->
+    <section id="blue-section">
+      <h2>Section D: Blue Behavior</h2>
+      <p><em>(Traits: analytical thinking, attention to detail, reliance on facts, systematic planning, and precision.)</em></p>
+      
+      <div class="question">
+        <label>1. I carefully analyze details and assess all available information before making decisions.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue1" value="1" required> 1</label>
+          <label><input type="radio" name="blue1" value="2"> 2</label>
+          <label><input type="radio" name="blue1" value="3"> 3</label>
+          <label><input type="radio" name="blue1" value="4"> 4</label>
+          <label><input type="radio" name="blue1" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>2. I value order, structure, and organization in both my work and personal environment.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue2" value="1" required> 1</label>
+          <label><input type="radio" name="blue2" value="2"> 2</label>
+          <label><input type="radio" name="blue2" value="3"> 3</label>
+          <label><input type="radio" name="blue2" value="4"> 4</label>
+          <label><input type="radio" name="blue2" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>3. I prefer to base my decisions on data, facts, and solid evidence rather than intuition.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue3" value="1" required> 1</label>
+          <label><input type="radio" name="blue3" value="2"> 2</label>
+          <label><input type="radio" name="blue3" value="3"> 3</label>
+          <label><input type="radio" name="blue3" value="4"> 4</label>
+          <label><input type="radio" name="blue3" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>4. I consistently follow guidelines, manuals, or instructions to ensure tasks are done correctly.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue4" value="1" required> 1</label>
+          <label><input type="radio" name="blue4" value="2"> 2</label>
+          <label><input type="radio" name="blue4" value="3"> 3</label>
+          <label><input type="radio" name="blue4" value="4"> 4</label>
+          <label><input type="radio" name="blue4" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>5. I tend to notice and point out small errors or inconsistencies that others might overlook.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue5" value="1" required> 1</label>
+          <label><input type="radio" name="blue5" value="2"> 2</label>
+          <label><input type="radio" name="blue5" value="3"> 3</label>
+          <label><input type="radio" name="blue5" value="4"> 4</label>
+          <label><input type="radio" name="blue5" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>6. I prefer a methodical, step-by-step approach rather than making quick, impulsive decisions.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue6" value="1" required> 1</label>
+          <label><input type="radio" name="blue6" value="2"> 2</label>
+          <label><input type="radio" name="blue6" value="3"> 3</label>
+          <label><input type="radio" name="blue6" value="4"> 4</label>
+          <label><input type="radio" name="blue6" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>7. I often observe a situation carefully before joining a discussion or offering my opinion.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue7" value="1" required> 1</label>
+          <label><input type="radio" name="blue7" value="2"> 2</label>
+          <label><input type="radio" name="blue7" value="3"> 3</label>
+          <label><input type="radio" name="blue7" value="4"> 4</label>
+          <label><input type="radio" name="blue7" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>8. I feel most comfortable when I have clear instructions and a detailed plan to follow.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue8" value="1" required> 1</label>
+          <label><input type="radio" name="blue8" value="2"> 2</label>
+          <label><input type="radio" name="blue8" value="3"> 3</label>
+          <label><input type="radio" name="blue8" value="4"> 4</label>
+          <label><input type="radio" name="blue8" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>9. I make it a point to double-check my work to ensure that everything is accurate.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue9" value="1" required> 1</label>
+          <label><input type="radio" name="blue9" value="2"> 2</label>
+          <label><input type="radio" name="blue9" value="3"> 3</label>
+          <label><input type="radio" name="blue9" value="4"> 4</label>
+          <label><input type="radio" name="blue9" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>10. I feel uneasy when tasks are completed without following established procedures.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue10" value="1" required> 1</label>
+          <label><input type="radio" name="blue10" value="2"> 2</label>
+          <label><input type="radio" name="blue10" value="3"> 3</label>
+          <label><input type="radio" name="blue10" value="4"> 4</label>
+          <label><input type="radio" name="blue10" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>11. I enjoy discussions and decisions that are based on logical arguments and factual evidence.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue11" value="1" required> 1</label>
+          <label><input type="radio" name="blue11" value="2"> 2</label>
+          <label><input type="radio" name="blue11" value="3"> 3</label>
+          <label><input type="radio" name="blue11" value="4"> 4</label>
+          <label><input type="radio" name="blue11" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>12. I rarely deviate from established methods because consistency is important to me.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue12" value="1" required> 1</label>
+          <label><input type="radio" name="blue12" value="2"> 2</label>
+          <label><input type="radio" name="blue12" value="3"> 3</label>
+          <label><input type="radio" name="blue12" value="4"> 4</label>
+          <label><input type="radio" name="blue12" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>13. I often question whether a process is being followed correctly and look for areas of improvement.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue13" value="1" required> 1</label>
+          <label><input type="radio" name="blue13" value="2"> 2</label>
+          <label><input type="radio" name="blue13" value="3"> 3</label>
+          <label><input type="radio" name="blue13" value="4"> 4</label>
+          <label><input type="radio" name="blue13" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>14. I take extra time to assess risks and verify that all details are correct before moving forward.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue14" value="1" required> 1</label>
+          <label><input type="radio" name="blue14" value="2"> 2</label>
+          <label><input type="radio" name="blue14" value="3"> 3</label>
+          <label><input type="radio" name="blue14" value="4"> 4</label>
+          <label><input type="radio" name="blue14" value="5"> 5</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>15. I am comfortable working quietly on my own, preferring focused analysis over spontaneous conversation.</label><br>
+        <div class="options">
+          <label><input type="radio" name="blue15" value="1" required> 1</label>
+          <label><input type="radio" name="blue15" value="2"> 2</label>
+          <label><input type="radio" name="blue15" value="3"> 3</label>
+          <label><input type="radio" name="blue15" value="4"> 4</label>
+          <label><input type="radio" name="blue15" value="5"> 5</label>
+        </div>
+      </div>
+    </section>
+    
+    <button type="button" class="submit-btn" onclick="calculateResults()">Submit</button>
+  </form>
+  
+  <div id="results"></div>
+  
+  <script>
+    function calculateResults() {
+      // Define the number of questions per section
+      const sections = {
+        Red: 15,
+        Yellow: 15,
+        Green: 15,
+        Blue: 15
+      };
+      
+      let scores = {
+        Red: 0,
+        Yellow: 0,
+        Green: 0,
+        Blue: 0
+      };
+      
+      // Calculate scores for each section
+      for (let i = 1; i <= sections.Red; i++) {
+        let redVal = document.querySelector('input[name="red' + i + '"]:checked');
+        if (redVal) {
+          scores.Red += parseInt(redVal.value);
+        }
+      }
+      
+      for (let i = 1; i <= sections.Yellow; i++) {
+        let yellowVal = document.querySelector('input[name="yellow' + i + '"]:checked');
+        if (yellowVal) {
+          scores.Yellow += parseInt(yellowVal.value);
+        }
+      }
+      
+      for (let i = 1; i <= sections.Green; i++) {
+        let greenVal = document.querySelector('input[name="green' + i + '"]:checked');
+        if (greenVal) {
+          scores.Green += parseInt(greenVal.value);
+        }
+      }
+      
+      for (let i = 1; i <= sections.Blue; i++) {
+        let blueVal = document.querySelector('input[name="blue' + i + '"]:checked');
+        if (blueVal) {
+          scores.Blue += parseInt(blueVal.value);
+        }
+      }
+      
+      // Create an array of color scores
+      let colorScores = [
+        { color: "Red", score: scores.Red },
+        { color: "Yellow", score: scores.Yellow },
+        { color: "Green", score: scores.Green },
+        { color: "Blue", score: scores.Blue }
+      ];
+      
+      // Sort descending by score
+      colorScores.sort((a, b) => b.score - a.score);
+      
+      let primaryColor = colorScores[0].color;
+      let secondaryColor = colorScores[1].color;
+      
+      // Mapping for Hippocratic temperaments
+      const hippocraticMap = {
+        Red: "Choleric",
+        Yellow: "Sanguine",
+        Green: "Phlegmatic",
+        Blue: "Melancholic"
+      };
+      
+      // Display the results including the Hippocratic terms
+      let resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = `<h2>Results</h2>
+                              <p><strong>Primary Color:</strong> ${primaryColor} (Score: ${colorScores[0].score})</p>
+                              <p><strong>Secondary Color:</strong> ${secondaryColor} (Score: ${colorScores[1].score})</p>
+                              <h3>You are: A ${hippocraticMap[secondaryColor]} ${hippocraticMap[primaryColor]}</h3>`;
+    }
+  </script>
+  
+</body>
+</html>
